@@ -14,12 +14,13 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Darhers/Ironia2022.git"
   },
-  "author": "",
+  "author": "Dar Hershkovits",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Darhers/Ironia2022/issues"
