@@ -76,19 +76,19 @@ a {
 }
 
 .landing h1 {
-    font-size: 60px;
+    font-size: 2em;
     font-weight: 800;
   }
   
 .landing h2 {
-    font-size: 40px;
+    font-size: 1.5em;
     font-weight: 700;
     margin-bottom: 0;
 }
 
 .landing p {
 margin-top: 10px;
-font-size: 30px;
+font-size: 1.25em;
 font-weight: 600;
 }
 
@@ -261,3 +261,32 @@ box-shadow: 0px 8px 10px -6px #003f77;
                 opacity: 0;
         }
 }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+         .landing .sponsor {
+                width: 50%;
+                height: 350px;
+        }
+        .sponsor-header {
+                height: 75px;
+        }
+        
+        .sponsor-body {
+                height: 200px;
+        }
+        
+        .sponsor-footer {
+                height: 75px;
+                border-top: 1px solid white;
+        }
+        
+        .logo-img {
+                height: 200px;
+                width: auto;
+        }
+
+        .lg {
+                height: 205px;
+        }
+} */
