@@ -8,32 +8,114 @@
         <script src="https://kit.fontawesome.com/447ab8d56a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <section class="landing">
+        <div class="landing">
             <div class="landing-inner" dir="rtl">
-                <img src="/images/amuta-logo.png" class="logo-img lg">
-                <img src="/images/ironia-logo.png" class="logo-img">
-                <p>חברות בעמותה לעונת 2021/22</p>
-                <h1>מתחילים בקרוב!</h1>
+                <div id="images">
+                    <img src="/images/amuta-logo.png" class="logo-img lg">
+                    <img src="/images/ironia-logo.png" class="logo-img">
+                </div>
+                <div id="headers">
+                    <p>חברות בעמותה לעונת 2021/22</p>
+                    <h1>מתחילים בקרוב!</h1>
+                </div>
                 <div class="countdown" dir="rtl"></div>
                 <div class="buttons">
                     <button class="btn-animated">מסלולי הצטרפות</button>
-                    <button class="btn-animated">על העמותה</button>
-                    <button class="btn-animated">השאר פרטים!</button>
+                    <!-- <button class="btn-animated">השאר פרטים!</button> -->
                 </div>
-                <div class="sponsporships" dir="rtl" hidden>
-                    <div class="gold" dir="rtl">
-                        <h2>ספונסר ראשי</h2>
-
-                        <p><i class="fas fa-medal"></i></p>
-                        <p><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
-                        <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
-                        <p><i class="fas fa-ticket-alt"></i> מנוי משפחתי</p>
-                        <hr>
-                        <p class="price">299₪ לחודש / 3,588₪ לעונה</p>
+                <div class="sponsorships hidden" dir="rtl">
+                    <div class="sponsorships-header">
+                        <p>ניתן להצטרף במגוון אמצעי תשלום:</p>
+                        <p>הוראת קבע חודשית מתחדשת / תשלום שנתי (עד 12 תשלומים) / תשלום במזומן או שיקים</p>
                     </div>
+                    <div class="sponsor" id="basic" dir="rtl">
+                        <div class="sponsor-header">
+                            <h2>מסלול בסיסי</h2>
+                            <p><i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="sponsor-body">
+                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p><i class="fas fa-ticket-alt"></i> מנוי בוגר</p>
+                        </div>
+                        <div class="sponsor-footer">
+                            <p class="price">99₪ לחודש / 1,188₪ לעונה</p>
+                        </div>
+                    </div>
+                    <div class="sponsor" id="small" dir="rtl">
+                        <div class="sponsor-header">
+                            <h2>ספונסר קטן</h2>
+                            <p><i class="fas fa-heart"></i><i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="sponsor-body">
+                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p><i class="fas fa-ticket-alt"></i> מנוי + מנוי לבן המשפחה</p>
+                        </div>
+                        <div class="sponsor-footer">
+                            <p class="price">129₪ לחודש / 1,548₪ לעונה</p>
+                        </div>
+                    </div>
+                    <div class="sponsor" id="bronze" dir="rtl">
+                        <div class="sponsor-header">
+                            <h2>ספונסר ארד</h2>
+                            <p><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="sponsor-body">
+                            <p><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
+                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p><i class="fas fa-ticket-alt"></i> מנוי + מנוי לבן המשפחה</p>
+                        </div>
+                        <div class="sponsor-footer">
+                            <p class="price">169₪ לחודש / 2,028₪ לעונה</p>
+                        </div>
+                    </div>
+                    <div class="sponsor" id="silver" dir="rtl">
+                        <div class="sponsor-header">
+                            <h2>ספונסר כסף</h2>
+                            <p><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></p>
+                        </div>
+                        <div class="sponsor-body">
+                            <p><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
+                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p><i class="fas fa-ticket-alt"></i> מנוי משפחתי</p>
+                        </div>
+                        <div class="sponsor-footer">
+                            <p class="price">249₪ לחודש / 2,988₪ לעונה</p>
+                        </div>
+                    </div>
+                    <div class="sponsor" id="gold" dir="rtl">
+                        <div class="sponsor-header">
+                            <h2>ספונסר זהב</h2>
+                            <p><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></i></p>
+                        </div>
+                        <div class="sponsor-body">
+                            <p><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
+                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p><i class="fas fa-ticket-alt"></i> מנוי משפחתי</p>
+                        </div>
+                        <div class="sponsor-footer">
+                            <p class="price">299₪ לחודש / 3,588₪ לעונה</p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="socials" dir="ltr">
+                    <span class="social-icon">
+                        <a href="https://www.facebook.com/ironiashdod" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </span>
+                    <span class="social-icon">
+                        <a href="https://www.instagram.com/ironiashdod" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </span>
+                    <span class="social-icon">
+                        <a href="https://twitter.com/ironiashdodfc" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>                      
+                    </span>
                 </div>
             </div>
-        </section>
+        </div>
         <script type="text/javascript" src="/scripts/index.js"></script>
     </body>
 </html>

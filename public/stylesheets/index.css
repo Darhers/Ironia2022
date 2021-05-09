@@ -9,7 +9,30 @@
     color: #fff;
     background: #333;
  }
-  
+ .socials {
+         margin-top: 15px;
+         font-size: 45px;
+ }
+
+ .social-icon {
+         margin-left: 5px;
+         margin-right: 5px;
+ }
+a {
+        outline: none;
+        text-decoration: none;
+}
+ a:link {
+         color: white;
+ }
+
+ a:visited {
+         color: white;
+ }
+
+ a:hover {
+         color: #FFD700; 
+ }
   .landing-inner {
     position: absolute;
     top: 0;
@@ -22,11 +45,12 @@
   }
   
   .landing {
-    position: relative;
+    /* position: relative; */
     height: 100vh;
     background-size: cover;
-    background-image: url('/images/backgrounds/bg7.jpg');
+    background-image: url('/images/backgrounds/bg13.jpg');
     background-position: center;
+
   }
 
 .logo-img {
@@ -40,10 +64,17 @@
 }
 
 .sponsorships {
+        width: 80%;
     height: auto;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    
 }
+
 .landing h1 {
     font-size: 60px;
     font-weight: 800;
@@ -61,16 +92,56 @@ font-size: 30px;
 font-weight: 600;
 }
 
-.landing .gold {
+.sponsorships-header {
+        margin-top: 15px;
+        text-align: center;
+        width: 79%;
+        height: 100px;
+        border: 1px solid white;
+        background: #000;
+        opacity: 0.7;
+        border-radius: 10px;
+}
+
+.sponsorships-header p {
+        margin-bottom: 10px;
+}
+.landing .sponsor {
     text-align: center;
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 450px;
     margin: 0 auto;
     margin-top: 25px;
-    border: 1px solid black;
-    background: rgba(255, 255, 255, 0.3);
+    margin-right: 15px;
+    margin-left: 15px;
+    border: 1px solid white;
+    background: #000;
+    opacity: 0.7;
     border-radius: 10px;
 }
 
+.sponsor-header {
+        height: 150px;
+}
+
+.sponsor-header p {
+        color:#FFD700;
+}
+
+.sponsor-body {
+        height: 200px;
+}
+
+.sponsor-footer {
+        height: 100px;
+        border-top: 1px solid white;
+}
+
+/* .sponsor p {
+        font-size: 25px;
+} */
 .countdown {
 font-size: 50px;
 display: flex;
@@ -88,7 +159,7 @@ opacity: 0.7;
 margin: 5px;
 }
 
-.countdown div:first-child {
+.countdown div:nth-child(4) {
 background: #17a2b8;
 }
 
@@ -168,4 +239,25 @@ color: #fff;
 -webkit-transform: translateY(4px) translateZ(0);
         transform: translateY(4px) translateZ(0);
 box-shadow: 0px 8px 10px -6px #003f77;
+}
+
+.close {
+        animation: shutoff 0.5s forwards;
+}
+
+.open {
+        animation: shutoff 0.5s reverse;
+}
+
+.hidden {
+        display: none;
+}
+
+@keyframes shutoff {
+        0% {
+                opacity: 1;
+        }
+        100% {
+                opacity: 0;
+        }
 }
