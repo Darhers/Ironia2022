@@ -4,7 +4,7 @@ const landingInnerDiv = document.getElementsByClassName("landing-inner")[0];
 const buttons = document.getElementsByClassName("btn-animated");
 const headersDiv = document.getElementById("headers");
 const sponsorshipsDiv = document.getElementsByClassName("sponsorships")[0];
-const launchDate = new Date("May 9, 2021 13:00:00").getTime();
+const launchDate = new Date("May 11, 2021 13:00:00").getTime();
 
 buttons[0].addEventListener("click", () => {
     headersDiv.classList.toggle("close");
