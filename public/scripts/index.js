@@ -5,24 +5,24 @@ const buttons = document.getElementsByClassName("btn-animated");
 const headersDiv = document.getElementById("headers");
 const sponsorshipsDiv = document.getElementsByClassName("sponsorships")[0];
 const launchDate = new Date("May 11, 2021 13:00:00").getTime();
+const imagesDiv = document.getElementById("images");
 
 buttons[0].addEventListener("click", () => {
     headersDiv.classList.toggle("close");
+    imagesDiv.classList.toggle("marginToggle");
     sponsorshipsDiv.classList.toggle("open");
     setTimeout(() => {
         headersDiv.classList.toggle("hidden");
     },500);
     setTimeout(() => {
         sponsorshipsDiv.classList.toggle("hidden");
-        if (landingDiv.style.height === "160vh") {
-            landingDiv.style.height = "100vh";
-            landingInnerDiv.style.height = "100vh";
-        } else {
-            landingDiv.style.height = "160vh";
-            landingInnerDiv.style.height = "160vh";
-
-
-        }
+        // if (landingDiv.style.height === "100vh") {
+        //     landingDiv.style.height = "50vh";
+        //     landingInnerDiv.style.height = "50vh";
+        // } else {
+        //     landingDiv.style.height = "100vh";
+        //     landingInnerDiv.style.height = "100vh";
+        // }
         // let overflowSet = document.getElementsByTagName("body")[0].style.overflowY;
         // console.log(overflowSet);
         // // if (overflowSet === "auto") {
