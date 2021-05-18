@@ -9,7 +9,7 @@ const imagesDiv = document.getElementById("images");
 const joinBtns = document.getElementsByClassName("join-link");
 
 for (let i=0; i<joinBtns.length; i++) {
-    joinBtns[i].href= "https://reg.ironi-ashdod.co.il/";
+    joinBtns[i].href= "https://cntr.click/7YRa3Wt";
 }
 
 buttons[0].addEventListener("click", () => {
