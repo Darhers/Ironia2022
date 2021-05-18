@@ -278,7 +278,7 @@ box-shadow: 0px 8px 10px -6px #003f77;
 }
 
 
-@media only screen and (min-device-width : 280px) and (max-device-width : 1000px) {
+@media only screen and (max-device-width : 1000px) {
 
         .sponsorships-header { 
                 width: 87%;
