@@ -6,6 +6,11 @@ const headersDiv = document.getElementById("headers");
 const sponsorshipsDiv = document.getElementsByClassName("sponsorships")[0];
 const launchDate = new Date("May 11, 2021 13:00:00").getTime();
 const imagesDiv = document.getElementById("images");
+const joinBtns = document.getElementsByClassName("join-link");
+
+for (let i=0; i<joinBtns.length; i++) {
+    joinBtns[i].href= "https://reg.ironi-ashdod.co.il/";
+}
 
 buttons[0].addEventListener("click", () => {
     headersDiv.classList.toggle("close");
