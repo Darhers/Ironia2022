@@ -1,0 +1,114 @@
+
+.close {
+    animation: shutoff 0.5s forwards;
+}
+
+.open {
+    animation: shutoff 0.5s reverse;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.logoLg {
+    width: 35%;
+}
+
+.darkBg {
+    background: rgb(255,193,7,0.7);
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.soc-link {
+   outline: none;
+   text-decoration: none;
+}
+
+.soc-link:link {
+    color: #212529;
+}
+
+.soc-link:visited {
+    color: #212529;
+}
+
+.soc-link:hover {
+    color: #0d6efd; 
+}
+
+@keyframes shutoff {
+    0% {
+            opacity: 1;
+    }
+    100% {
+            opacity: 0;
+    }
+}
+
+.slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: -1;
+    animation: imageAnimation 50s linear infinite; 
+  }
+  
+  .slideshow li:nth-child(1) { 
+    background-image: url('/images/backgrounds/bg12.jpg'); 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url('/images/backgrounds/bg10.jpg');
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url('/images/backgrounds/bg13.jpg');
+    animation-delay: 20s; 
+  }
+  .slideshow li:nth-child(4) { 
+    background-image: url('/images/backgrounds/bg3.jpg');
+    animation-delay: 30s; 
+  }
+  .slideshow li:nth-child(5) { 
+    background-image: url('/images/backgrounds/bg1.jpg');
+    animation-delay: 40s; 
+  }
+  
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    }
+  }
+ 

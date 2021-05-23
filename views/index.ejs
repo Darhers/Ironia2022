@@ -2,127 +2,126 @@
 <html>
     <head>
         <title>עירוניה 2021-2022</title>
-        <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/index2.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/447ab8d56a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <!-- <div class="bg"></div> -->
-        <div class="landing">
-            <div class="landing-inner" dir="rtl">
-                <div id="images" class="marginToggle">
-                    <img src="/images/amuta-logo.png" class="logo-img lg">
-                    <img src="/images/ironia-logo.png" class="logo-img">
+        <div class="container text-center">
+            <div class="row" id="logoRow">
+                <div class="col-12" id="images">
+                    <img src="/images/amuta-logo.png" class="logo-img logoLg">
+                    <img src="/images/ironia-logo.png" class="logo-img w-25">
                 </div>
-                <div id="headers">
-                    <h1>חברות בעמותה לעונת 2021/22</h1>
+            </div>
+            <div class="row justify-content-center" id="headers">
+                <div class="col-10 darkBg border border-3 border-dark rounded">
+                    <h1 class="display-3 text-dark fw-bold rounded">חברות בעמותה לעונת 2021/22</h1>
                 </div>
-                <!-- <div class="countdown" dir="rtl"></div> -->
-                <div class="buttons">
-                    <button class="btn-animated">מסלולי הצטרפות</button>
-                    <a href="" target="_blank" class="join-link"><button class="btn-animated blue">הצטרף עכשיו!</button></a>
+            </div>
+            <div class="row mt-3" id="buttons" dir="rtl">
+                <div class="col">
+                    <button class="btn btn-lg btn-warning"><span class="h2 bold">מסלולי הצטרפות</span></button>
+                    <a href="" target="_blank" class="join-link"><button class="btn btn-lg btn-primary"><span class="h2 bold">הצטרף עכשיו!</span></button></a>
                 </div>
-                <div class="sponsorships hidden" dir="rtl">
-                    <div class="sponsorships-header">
-                        <p>ניתן להצטרף במגוון אמצעי תשלום:</p>
-                        <p>הוראת קבע חודשית מתחדשת</p>
-                        <p>השלום שנתי (עד 12 תשלומים)</p>
-                        <p>תשלום במזומן או שיקים</p>
-                    </div>
-                    <div class="sponsor" id="basic" dir="rtl">
-                        <div class="sponsor-header">
-                            <h2>מסלול בסיסי</h2>
-                            <p><i class="fas fa-heart"></i></p>
+            </div>
+            <div class="row hidden mt-3" id="sponsorships">
+                <div class="row m-0 p-0 justify-content-center" id="sponsorships" dir="rtl">
+                    <div class="card col-6 col-sm-3 mt-2 me-1 ms-1 bg-warning bg-gradient shadow-lg">
+                        <div class="card-header h3 bold">
+                            מסלול בסיסי
+                            <h5 class="card-title text-primary"><i class="fas fa-heart"></i></h5>
                         </div>
-                        <div class="sponsor-body">
-                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
-                            <p><i class="fas fa-ticket-alt"></i> מנוי בוגר</p>
-                        </div>
-                        <div class="sponsor-footer">
-                            <a href="" target="_blank" class="join-link"><button class="btn-animated blue">הצטרף עכשיו!</button></a>
-                            <p class="price">₪99 לחודש / ₪1,188 לעונה</p>
+                        <div class="card-body h5">
+                            <p class="card-text"><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p class="card-text"><i class="fas fa-ticket-alt"></i> מנוי בוגר</p>
+                            <p class="transparent">spacer spacer spacer</p>
+                            <p class="card-title h5 bold">₪99 לחודש / ₪1,188 לעונה</p>
+                            <a href="" target="_blank" class="join-link"><button class="btn btn-lg btn-primary"><span class="h5 bold">הצטרף עכשיו!</span></button></a>
                         </div>
                     </div>
-                    <div class="sponsor" id="small" dir="rtl">
-                        <div class="sponsor-header">
-                            <h2>ספונסר קטן</h2>
-                            <p><i class="fas fa-heart"></i><i class="fas fa-heart"></i></p>
+                    
+                    <div class="card col-6 col-sm-3 mt-2 me-1 ms-1 bg-warning bg-gradient">
+                        <div class="card-header h3 bold">
+                            ספונסר קטן
+                            <h5 class="card-title text-primary"><i class="fas fa-heart"></i><i class="fas fa-heart"></i></h5>
                         </div>
-                        <div class="sponsor-body">
-                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
-                            <p><i class="fas fa-ticket-alt"></i> מנוי + מנוי לבן המשפחה</p>
-                        </div>
-                        <div class="sponsor-footer">
-                            <a href="" target="_blank" class="join-link"><button class="btn-animated blue">הצטרף עכשיו!</button></a>
-                            <p class="price">₪129 לחודש / ₪1,548 לעונה</p>
-                        </div>
-                    </div>
-                    <div class="sponsor" id="bronze" dir="rtl">
-                        <div class="sponsor-header">
-                            <h2>ספונסר ארד</h2>
-                            <p><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></p>
-                        </div>
-                        <div class="sponsor-body">
-                            <p><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
-                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
-                            <p><i class="fas fa-ticket-alt"></i> מנוי זוגי</p>
-                        </div>
-                        <div class="sponsor-footer">
-                            <a href="" target="_blank" class="join-link"><button class="btn-animated blue">הצטרף עכשיו!</button></a>
-                            <p class="price">₪169 לחודש / ₪2,028 לעונה</p>
+                        <div class="card-body h5">
+                            <p class="card-text"><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p class="card-text"><i class="fas fa-ticket-alt"></i> מנוי זוגי</p>
+                            <p class="transparent">spacer spacer spacer</p>
+                            <p class="card-title h5 bold">₪129 לחודש / ₪1,548 לעונה</p>
+                            <a href="" target="_blank" class="join-link"><button class="btn btn-lg btn-primary"><span class="h5 bold">הצטרף עכשיו!</span></button></a>
                         </div>
                     </div>
-                    <div class="sponsor" id="silver" dir="rtl">
-                        <div class="sponsor-header">
-                            <h2>ספונסר כסף</h2>
-                            <p><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></p>
+
+                    <div class="card col-6 col-sm-3 mt-2 me-1 ms-1 bg-warning bg-gradient">
+                        <div class="card-header h3 bold">
+                            ספונסר ארד
+                            <h5 class="card-title text-primary"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></h5>
                         </div>
-                        <div class="sponsor-body">
-                            <p><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
-                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
-                            <p><i class="fas fa-ticket-alt"></i> מנוי לכל המשפחה!</p>
-                        </div>
-                        <div class="sponsor-footer">
-                            <a href="" target="_blank" class="join-link"><button class="btn-animated blue">הצטרף עכשיו!</button></a>
-                            <p class="price">₪249 לחודש / ₪2,988 לעונה</p>
+                        <div class="card-body h5">
+                            <p class="card-text"><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
+                            <p class="card-text"><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p class="card-text"><i class="fas fa-ticket-alt"></i> מנוי זוגי</p>
+                            <p class="card-title h5 bold">₪169 לחודש / ₪2,028 לעונה</p>
+                            <a href="" target="_blank" class="join-link"><button class="btn btn-lg btn-primary"><span class="h5 bold">הצטרף עכשיו!</span></button></a>
                         </div>
                     </div>
-                    <div class="sponsor" id="gold" dir="rtl">
-                        <div class="sponsor-header">
-                            <h2>ספונסר זהב</h2>
-                            <p><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></i></p>
+                    <div class="w-100"></div>
+                    <div class="card col-6 col-sm-3 mt-2 me-1 ms-1 bg-warning bg-gradient">
+                        <div class="card-header h3 bold">
+                            ספונסר כסף
+                            <h5 class="card-title text-primary"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></h5>
                         </div>
-                        <div class="sponsor-body">
-                            <p><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
-                            <p><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
-                            <p><i class="fas fa-ticket-alt"></i> מנוי לכל המשפחה!</p>
+                        <div class="card-body h5">
+                            <p class="card-text"><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
+                            <p class="card-text"><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p class="card-text"><i class="fas fa-ticket-alt"></i> מנוי לכל המשפחה!</p>
+                            <p class="card-title h5 bold">₪249 לחודש / ₪2,988 לעונה</p>
+                            <a href="" target="_blank" class="join-link"><button class="btn btn-lg btn-primary"><span class="h5 bold">הצטרף עכשיו!</span></button></a>
                         </div>
-                        <div class="sponsor-footer">
-                            <a href="" target="_blank" class="join-link"><button class="btn-animated blue">הצטרף עכשיו!</button></a>
-                            <p class="price">₪299 לחודש / ₪3,588 לעונה</p>
+                    </div>
+
+                    <div class="card col-6 col-sm-3 mt-2 me-1 ms-1 bg-warning bg-gradient">
+                        <div class="card-header h3 bold">
+                            ספונסר זהב
+                            <h5 class="card-title text-primary"><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></h5>
                         </div>
-                    </div>  
+                        <div class="card-body h5">
+                            <p class="card-text"><i class="fas fa-male"></i> + <i class="fas fa-female"></i> צירוף בן/בת משפחה</p>
+                            <p class="card-text"><i class="fas fa-gift"></i> מתנת הצטרפות יחודית</p>
+                            <p class="card-text"><i class="fas fa-ticket-alt"></i> מנוי לכל המשפחה!</p>
+                            <p class="card-title h5 bold">₪299 לחודש / ₪3,588 לעונה</p>
+                            <a href="" target="_blank" class="join-link"><button class="btn btn-lg btn-primary"><span class="h5 bold">הצטרף עכשיו!</span></button></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="socials" dir="ltr">
-                    <span class="social-icon">
-                        <a href="https://www.facebook.com/ironiashdod" target="_blank">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </span>
-                    <span class="social-icon">
-                        <a href="https://www.instagram.com/ironiashdod" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </span>
-                    <span class="social-icon">
-                        <a href="https://twitter.com/ironiashdodfc" target="_blank">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>                      
-                    </span>
+            </div>
+            <div class="row justify-content-center mt-3" dir="ltr">
+                <div class="col-3 col-sm-2 social-icon display-5 p-0 darkBg border border-dark rounded">
+                    <a class="soc-link" href="https://www.facebook.com/ironiashdod" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a class="soc-link" href="https://www.instagram.com/ironiashdod" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="soc-link" href="https://twitter.com/ironiashdodfc" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>                      
                 </div>
             </div>
         </div>
+        <ul class="slideshow">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         <script type="text/javascript" src="/scripts/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
 </html>
