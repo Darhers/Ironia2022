@@ -23,14 +23,3 @@ buttons[0].addEventListener("click", () => {
         sponsorshipsDiv.classList.toggle("hidden");
     },500);
 });
-
-const images = [];
-for (let i=1; i<=15; i++) {
-    images.push('url("/images/backgrounds/bg' + i +'.jpg")');
-}
-const setBg = setInterval(() => {
-    
-    const bg = images[Math.floor(Math.random() * images.length)];
-    landingDiv.style.backgroundImage = bg;
-    landingDiv.style.backgroundSize = "cover";
-}, 5000);
