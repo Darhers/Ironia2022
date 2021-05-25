@@ -35,10 +35,10 @@ const refresh = setInterval(() => {
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
     countdown.innerHTML = `
-        <div class="col ms-1 me-1 p-1 border border-dark rounded bg-primary bg-gradient text-dark fw-bold display-4">${seconds}<span>שניות</span></div>
-        <div class="col ms-1 me-1 p-1 border border-dark rounded bg-primary bg-gradient text-dark fw-bold display-4">${mins}<span>דקות</span></div>
-        <div class="col ms-1 me-1 p-1 border border-dark rounded bg-primary bg-gradient text-dark fw-bold display-4">${hours}<span>שעות</span></div>        
-        <div class="col ms-1 me-1 p-1 border border-dark rounded bg-warning bg-gradient text-dark fw-bold display-4">${days}<span>ימים</span></div>
+        <div class="col-2 ms-1 me-1 p-1 border border-dark rounded bg-primary bg-gradient text-dark fw-bold display-4">${seconds}<span>שניות</span></div>
+        <div class="col-2 ms-1 me-1 p-1 border border-dark rounded bg-primary bg-gradient text-dark fw-bold display-4">${mins}<span>דקות</span></div>
+        <div class="col-2 ms-1 me-1 p-1 border border-dark rounded bg-primary bg-gradient text-dark fw-bold display-4">${hours}<span>שעות</span></div>        
+        <div class="col-2 ms-1 me-1 p-1 border border-dark rounded bg-warning bg-gradient text-dark fw-bold display-4">${days}<span>ימים</span></div>
     `
 
     if (difference < 0) {
