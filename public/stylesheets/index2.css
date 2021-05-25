@@ -112,3 +112,15 @@
     }
   }
  
+.countdown div {
+    opacity: 0.9;
+    }
+    
+    .countdown div:nth-child(4) {
+    background: #0d6efd;
+    }
+    
+    .countdown span {
+    display: block;
+    font-size: 25px;
+    }
