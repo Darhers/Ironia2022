@@ -4,7 +4,7 @@ const landingInnerDiv = document.getElementsByClassName("landing-inner")[0];
 const buttons = document.getElementsByClassName("btn");
 const headersDiv = document.getElementById("headers");
 const sponsorshipsDiv = document.getElementById("sponsorships");
-const launchDate = new Date("May 29, 2021 13:00:00").getTime();
+const launchDate = new Date("May 29, 2021 20:30:00").getTime();
 const imagesDiv = document.getElementById("images");
 const joinBtns = document.getElementsByClassName("join-link");
 
