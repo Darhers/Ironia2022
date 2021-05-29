@@ -14,6 +14,7 @@ app.use(methodOverride('_method'));
 
 //Index route
 app.get("/", (req,res) => {
+    console.log("New visitor!");
     res.render('index');
 });
 
