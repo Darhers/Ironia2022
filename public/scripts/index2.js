@@ -4,7 +4,7 @@ const landingInnerDiv = document.getElementsByClassName("landing-inner")[0];
 const buttons = document.getElementsByClassName("btn");
 const headersDiv = document.getElementById("headers");
 const sponsorshipsDiv = document.getElementById("sponsorships");
-const launchDate = new Date("May 29, 2021 20:30:00").getTime();
+const launchDate = new Date("May 29, 2021 14:00:00").getTime();
 const imagesDiv = document.getElementById("images");
 const joinBtns = document.getElementsByClassName("join-link");
 
@@ -43,7 +43,15 @@ const refresh = setInterval(() => {
 
     if (difference < 0) {
         clearInterval(refresh);
-        countdown.innerHTML = "success!";
+        countdown.style.display = "none";
+        document.getElementsByClassName("teaser")[0].style.display = "none";
+        document.getElementById("sponsBtnSpan").classList.remove("h1");
+        document.getElementById("sponsBtnSpan").classList.add("h2");
+        document.getElementById("sponsBtn").classList.remove("btn-primary");
+        document.getElementById("sponsBtn").classList.add("btn-warning");
+        for (let i=0; i<joinBtns.length; i++) {
+            joinBtns[i].classList.remove("hidden");
+        }
     }
 }, 1000);
 

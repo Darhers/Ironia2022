@@ -76,10 +76,10 @@
   }
   
   .slideshow li:nth-child(1) { 
-    background-image: url('/images/backgrounds/bg12.jpg'); 
+    background-image: url('/images/backgrounds/bg12.jpeg'); 
   }
   .slideshow li:nth-child(2) { 
-    background-image: url('/images/backgrounds/bg10.jpg');
+    background-image: url('/images/backgrounds/bg2.jpeg');
     animation-delay: 10s; 
   }
   .slideshow li:nth-child(3) { 
