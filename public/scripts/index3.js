@@ -15,7 +15,7 @@ for (let i=0; i<joinBtns.length; i++) {
 }
 
 buttons[0].addEventListener("click", () => {
-    headersDiv.classList.toggle("close");
+    // headersDiv.classList.toggle("close");
     imagesDiv.classList.toggle("marginToggle");
     // sponsorshipsDiv.classList.toggle("open");
     // setTimeout(() => {
