@@ -10,20 +10,20 @@ const joinBtns = document.getElementsByClassName("join-link");
 
 
 for (let i=0; i<joinBtns.length; i++) {
-    joinBtns[i].href= "https://cntr.click/7YRa3Wt";
+    // joinBtns[i].href= "https://cntr.click/7YRa3Wt";
     joinBtns[i].classList.add("hidden");
 }
 
 buttons[0].addEventListener("click", () => {
     headersDiv.classList.toggle("close");
     imagesDiv.classList.toggle("marginToggle");
-    sponsorshipsDiv.classList.toggle("open");
-    setTimeout(() => {
-        headersDiv.classList.toggle("hidden");
-    },500);
-    setTimeout(() => {
-        sponsorshipsDiv.classList.toggle("hidden");
-    },500);
+    // sponsorshipsDiv.classList.toggle("open");
+    // setTimeout(() => {
+    //     headersDiv.classList.toggle("hidden");
+    // },500);
+    // setTimeout(() => {
+    //     sponsorshipsDiv.classList.toggle("hidden");
+    // },500);
 });
 
 const refresh = setInterval(() => {
@@ -45,10 +45,10 @@ const refresh = setInterval(() => {
         clearInterval(refresh);
         countdown.style.display = "none";
         document.getElementsByClassName("teaser")[0].style.display = "none";
-        document.getElementById("sponsBtnSpan").classList.remove("h1");
-        document.getElementById("sponsBtnSpan").classList.add("h2");
-        document.getElementById("sponsBtn").classList.remove("btn-primary");
-        document.getElementById("sponsBtn").classList.add("btn-warning");
+        // document.getElementById("sponsBtnSpan").classList.remove("h1");
+        // document.getElementById("sponsBtnSpan").classList.add("h2");
+        // document.getElementById("sponsBtn").classList.remove("btn-primary");
+        // document.getElementById("sponsBtn").classList.add("btn-warning");
         for (let i=0; i<joinBtns.length; i++) {
             joinBtns[i].classList.remove("hidden");
         }
